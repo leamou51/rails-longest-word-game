@@ -1,0 +1,38 @@
+<div class="container d-flex flex-column align-items-center mt-3 py-4 rounded" style="background-color: #ffa299; font-family: 'Nunito', sans-serif">
+
+    <div class="header d-flex justify-content-between w-100 mb-4">
+      <div class="new-session">
+        <%= link_to "New session", root_path %>
+      </div>
+      <div class="display-score d-flex align-items-center">
+        <p>score</p>
+        <div class="score">
+          <%= session['score'] %>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-new">
+      <h1>New grid</h1>
+    </div>
+
+    <div class="grid">
+      <ul>
+      <% @letters.each do |letter| %>
+        <li><%=letter%></li>
+      <% end %>
+      </ul>
+    </div>
+
+    <p>What is the longest word you can find?</p>
+    <form action="/score" method="post" class="form-inline">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <input type="hidden" name="letters" value='<%=@letters%>'>
+      <input type="hidden" name="start" value='<%=Time.now.to_i%>'>
+      <div class="form-group mb-2">
+        <input type="text" name="word" class="form-control mx-2">
+      </div>
+      <button type="submit" class="btn mb-2 mx-2" style="background-color: #562349; color:#fee2b3">Play</button>
+    </form>
+
+</div>

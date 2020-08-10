@@ -1,0 +1,20 @@
+<div class="container d-flex flex-column align-items-center mt-3 py-4 rounded" style="background-color: #ffa299; font-family: 'Nunito', sans-serif">
+
+  <div class="header-score">
+    <h1>Result</h1>
+  </div>
+
+  <div class="result-message">
+    <p><%=@result[:message]%></p>
+  </div>
+
+  <p><%=@result[:time]%></p>
+
+  <div class="result-score">
+    <p>Your total score: <%=session['score']%></p>
+  </div>
+
+  <div class="play-again">
+    <%= link_to "Play again", new_path %>
+  </div>
+</div>

@@ -1,0 +1,136 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.play {
+  border-radius: 8px;
+  background-color: #ad6989;
+  width: 200px;
+  margin: 24px;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  &:hover {
+    background-color: #562349;
+    }
+}
+
+
+ .play {
+  a {
+    text-decoration: none;
+     color: #fee2b3;
+    &:hover{
+      text-decoration: none;
+      color: #fee2b3;
+    }
+  }
+ }
+
+.grid {
+  ul {
+    padding: 0px;
+     li {
+    display:inline-block;
+    text-decoration:none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+    padding: 6px 12px;
+    background-color: #562349;
+    color: #fee2b3;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+  }
+}
+
+.new-session {
+  border-radius: 8px;
+  background-color: #ad6989;
+  width: 150px;
+  margin: 0px 16px 16px 16px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  &:hover {
+    background-color: #562349;
+    }
+}
+
+.new-session {
+  a {
+    text-decoration: none;
+     color: #fee2b3;
+    &:hover{
+      text-decoration: none;
+      color: #fee2b3;
+    }
+  }
+ }
+
+.score {
+  border-radius: 8px;
+  background-color: #562349;
+  width: 50px;
+  margin: 0px 16px 16px 16px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #fee2b3;
+}
+
+.header-new {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+.header-score {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+.play-again {
+  border-radius: 8px;
+  background-color: #ad6989;
+  width: 200px;
+  margin: 24px;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  &:hover {
+    background-color: #562349;
+    }
+}
+
+
+ .play-again {
+  a {
+    text-decoration: none;
+     color: #fee2b3;
+    &:hover{
+      text-decoration: none;
+      color: #fee2b3;
+    }
+  }
+ }
+
+ .result-message {
+  p {
+    font-size: 24px;
+    margin-top: 16px;
+    text-align: center;
+  }
+ }
+
+ .result-score {
+  p {
+    font-size: 32px;
+    text-align: center;
+  }
+ }
